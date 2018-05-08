@@ -72,12 +72,7 @@
 <script>
     let offsetX = $('#loveHeart').width() / 2;
     let offsetY = $('#loveHeart').height() / 2 - 55;
-    let together = new Date();
-    together.setFullYear(2018, 1, 29); //2017/1/26
-    together.setHours(20);
-    together.setMinutes(0);
-    together.setSeconds(0);
-    together.setMilliseconds(0);
+    let together = new Date("2018/1/29 20:00:00");
     if (!document.createElement('canvas').getContext) {
         let msg = document.createElement('div');
         msg.id = 'errorMsg';
