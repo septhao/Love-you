@@ -86,7 +86,7 @@ function adjustCodePosition() {
 
 function timeElapse(date) {
     let current = Date();
-    let seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+    let seconds = (Date.parse(current) - date) / 1000;
     let days = Math.floor(seconds / (3600 * 24));
     seconds = seconds % (3600 * 24);
     let hours = Math.floor(seconds / 3600);
